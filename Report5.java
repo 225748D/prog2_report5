@@ -1,7 +1,13 @@
+import java.lang.NullPointerException;
+
 public class Report5{
 
 public static void main(String[] args) {
-String str = null;
-str.length();
+    try{
+        String str = null;
+        System.out.println(str.length());
+    }catch(NullPointerException e){
+        System.out.println("NullPointerExceptionが発生しています\n" + e.getMessage());
+    }
     }
 }
